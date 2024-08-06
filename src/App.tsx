@@ -5,6 +5,7 @@ import Contentt from "./components/Content"
 // import { Layout } from "antd"
 import Features from "./components/Features"
 import Advice from "./components/Advice"
+import Service from "./components/Service"
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
     <Content>
       <Contentt/>
       <Advice/>
+      <Service/>
     </Content>
     
     </>
