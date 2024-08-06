@@ -1,5 +1,4 @@
 import {  Row, Col, Card, Typography } from "antd";
-import { HomeOutlined, AppstoreOutlined, TeamOutlined } from "@ant-design/icons";
 const { Title, Text } = Typography;
 
 const Features = () => {
