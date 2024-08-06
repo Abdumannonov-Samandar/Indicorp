@@ -8,7 +8,6 @@ const App = () => {
   return (
     <Layout style={{width: "100%", backgroundImage: "url(/bg.png)", backgroundSize: "cover", margin: "0", padding: "0"}}>
       <SiteHeader/>
-      <Content>
         <Hero/>
         <Features/>
       </Content>
