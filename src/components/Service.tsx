@@ -25,7 +25,7 @@ const Service = () => {
                     our field</Title>
                     <Text type="secondary" style={{fontSize: "16px", lineHeight: "24px", fontWeight: "500", color: "#737373", marginBottom: "50px"}}>Most calendars are designed for teams.
                     Slate is designed for freelancers who want a simple way to plan their schedule.</Text>
-                        <Flex gap={'21px'}>
+                        <Flex gap={'21px'} style={{marginBottom: "30px"}}>
                             <FaUsers style={{width: '32px', height: '32px', color: "#FFA62B"}}/>
                             <Flex vertical gap={"10px"}>
                                     <Title level={4} style={{fontSize: "16px", lineHeight: "24px", fontWeight: "700", color: "#252B42", marginBottom: "5px", marginTop: "0px"}}>

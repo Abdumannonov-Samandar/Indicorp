@@ -6,6 +6,7 @@ import Contentt from "./components/Content"
 import Features from "./components/Features"
 import Advice from "./components/Advice"
 import Service from "./components/Service"
+import Clients from "./components/Clients"
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Contentt/>
       <Advice/>
       <Service/>
+      <Clients/>
     </Content>
     
     </>
