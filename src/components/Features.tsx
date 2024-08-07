@@ -1,9 +1,9 @@
-import { Row, Col, Card, Typography } from "antd";
-import { PiSuitcaseSimpleBold } from "react-icons/pi";
-import { BsShop } from "react-icons/bs";
-import { RiBookReadLine } from "react-icons/ri";
+import { Row, Col, Card, Typography } from "antd"
+import { PiSuitcaseSimpleBold } from "react-icons/pi"
+import { BsShop } from "react-icons/bs"
+import { RiBookReadLine } from "react-icons/ri"
 
-const { Title, Text } = Typography;
+const { Title, Text } = Typography
 
 const datas = [
   {
@@ -24,7 +24,7 @@ const datas = [
     title: "Social Marketing",
     text: "We focus on ergonomics and meeting you where you work.",
   },
-];
+]
 
 const Features = () => {
   return (
@@ -38,6 +38,7 @@ const Features = () => {
             <Col xs={24} sm={12} md={8} key={data.id}>
               <Card
                 hoverable
+                className="custom-card"
                 style={{
                   width: "100%",
                   height: "210px",
@@ -51,15 +52,17 @@ const Features = () => {
                 }}
                 bodyStyle={{ padding: "0" }}
               >
-                {data.icon}
+                <div className="icon-wrapper">
+                  {data.icon}
+                </div>
                 <Title
+                  className="title"
                   level={3}
                   style={{
                     fontWeight: "700",
                     fontSize: "24px",
                     lineHeight: "31px",
                     letterSpacing: "0.1px",
-                    color: "#252B42",
                     margin: "10px 0",
                   }}
                 >
@@ -71,7 +74,6 @@ const Features = () => {
                     fontSize: "14px",
                     lineHeight: "20px",
                     letterSpacing: "0.2px",
-                    color: "#737373",
                     textAlign: "center",
                   }}
                 >
@@ -82,8 +84,26 @@ const Features = () => {
           ))}
         </Row>
       </div>
-    </section>
-  );
-};
 
-export default Features;
+      <style>{`
+        .custom-card {
+          transition: background-color 0.3s, color 0.3s
+        }
+        .custom-card:hover {
+          background-color: #00A0C1
+        }
+        .custom-card:hover .icon-wrapper > * {
+          color: #fff
+        }
+        .custom-card:hover .ant-typography {
+          color: #fff
+        }
+        .ant-typography {
+          color: #252B42
+        }
+      `}</style>
+    </section>
+  )
+}
+
+export default Features
