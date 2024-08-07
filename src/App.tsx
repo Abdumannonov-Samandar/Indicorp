@@ -8,6 +8,8 @@ import Service from "./components/Service"
 import Clients from "./components/Clients"
 import Touch from "./components/Touch"
 import { Layout } from "antd"
+import Contact from "./components/Contact"
+import Footer from "./components/Footer"
 
 const App = () => {
   return (
@@ -23,7 +25,9 @@ const App = () => {
       <Service/>
       <Clients/>
       <Touch/>
+      <Contact/>
     </Content>
+    <Footer/>
     
     </>
   )

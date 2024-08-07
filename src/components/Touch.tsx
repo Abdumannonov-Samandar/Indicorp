@@ -28,7 +28,7 @@ const cardDatas = [
 
 const Touch = () => {
   return (
-    <section style={{ padding: "80px 0 148px 0", background: "#FAFAFA" }}>
+    <section style={{ padding: "80px 0 148px 0", background: "#F3F3F3" }}>
       <div
         className="container"
         style={{
